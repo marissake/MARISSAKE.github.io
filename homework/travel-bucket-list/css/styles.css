@@ -2,7 +2,6 @@ body {
 	padding: 10px;
 	background-color: #f3f3f3;
 }
-
 nav li {
 	display: inline;
 	text-decoration: none;
@@ -18,12 +17,10 @@ nav {
 	text-align: center;
 	font-size: 9px;
 }
-
 .location {
 	padding: 0px;
 	margin-top: 0px;
 	margin-bottom: 15px;
-
 }
 header h1 {
 	background-color: #262c44;
@@ -33,7 +30,6 @@ header h1 {
 	font-size: 25px;
 	color: white;
 	margin: 0px;
-
 }
 .aspen {
 	background-color: #85a2b2;
@@ -47,23 +43,19 @@ header h1 {
 	padding: 15px;
 	margin-bottom: 35px;
 }
-
 .reykjavik {
 	background-color: #007fbc;
 	text-align: center;
 	padding: 15px;
 	margin-bottom: 35px;
 }
-
 .bigimage {
 	width: 350px;
 }
-
 p {
 	text-align: left;
 	margin: 16px 5px;
 }
-
 h2 {
 	text-align: center;
 	font-size: 15px;
