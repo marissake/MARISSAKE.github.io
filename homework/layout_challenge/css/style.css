@@ -1,0 +1,85 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 40px 40px;
+}
+.header {
+  background: lightgray;
+  border: 1px solid gray;
+}
+#two-column .header {
+  height: 150px;
+}
+#three-column .header {
+  height: 150px;
+}
+.content {
+	display:flex;
+	justify-content: space-between;
+	margin: 20px 0px;
+}
+.leftarticle {
+	background: lightgray;
+  	border: 1px solid gray;
+  	height: 400px;
+  	width: 75%;
+  	margin-right: 20px;
+}
+.rightarticle {
+	background: lightgray;
+  	border: 1px solid gray;
+  	height: 400px;
+  	width: 25%;
+}
+footer {
+	background: lightgray;
+  	border: 1px solid gray;
+	height: 150px;
+}
+#three-column .leftarticle {
+	width: 20%;
+	margin-right: 20px;
+}
+#three-column .middlearticle {
+	width: 60%;
+	margin-right: 20px;
+	height: 400px;
+	background: lightgray;
+  	border: 1px solid gray;
+}
+#three-column .rightarticle {
+	width: 20%;
+}
+#simplemarketing content {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px; 
+}
+.contentleft {
+	background: lightgray;
+  	border: 1px solid gray;
+  	height: 400px;
+  	width: 50%;
+  	margin-right: 20px;
+ }
+.contentright {
+	background: lightgray;
+  	border: 1px solid gray;
+  	height: 400px;
+  	width: 50%;
+}
+#simplemarketing .header {
+
+  height: 150px;
+}
+.carousel {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.carouselitem {
+	background: lightgray;
+  	border: 1px solid gray;
+  	height: 200px;
+  	width: 32%;
+}
