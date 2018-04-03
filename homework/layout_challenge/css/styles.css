@@ -1,0 +1,53 @@
+body {
+	margin: 40px;
+}
+div {
+	background: lightgray;
+  border: 1px solid gray;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	height: 150px;
+	width: 25%;
+	margin: 0px;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 150px;
+	width: 65%;
+	background-color: none;
+	align-items: center;
+}
+.links {
+	height: 65px;
+	width: 23%;
+}
+.carousel {
+	display: flex;
+	margin-top: 25px;
+	justify-content: space-between;
+}
+.carouselitem {
+	height: 190px;
+	width: 31%;
+}
+.main {
+	height: 350px;
+	width: 100%;
+	background: lightgray;
+	border: 1px solid gray;
+	margin-top: 25px;
+}
+footer {
+	height: 160px;
+	width: 100%;
+	background: lightgray;
+  border: 1px solid gray;
+  margin-top: 25px;
+}
+
