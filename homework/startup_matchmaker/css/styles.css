@@ -1,0 +1,159 @@
+/* FONT FAMILY HELPERS :)
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+	width: 900px;
+	margin: 0 auto;
+}
+header {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	border-bottom: 5px solid yellow;
+}
+p {
+	color: yellow;
+	font-family: "Merriweather", serif;
+	font-size: 30px;
+	margin: 0px;
+}
+.logo {
+	padding: 0px 20px;
+}
+nav {
+	display: block;
+	justify-content: space-between;
+	height: auto;
+	padding-right: 10px;
+}
+a {
+	padding: 8px;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	font-size: 18px;
+}
+.banner {
+	border-top: 1px solid gray;
+	background-color: #C6C6C6;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	font-size: 28px;
+	margin: 16px;
+}
+.taste {
+	color: darkgray;
+	text-decoration: line-through;
+}
+.are {
+	border-bottom: 3px solid yellow;
+}
+.graphic {
+	background-image: url("file:///Users/sandrake/Documents/FEWD/MARISSAKE.github.io/homework/startup_matchmaker/img/coworking.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position-y: center;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*box-shadow: 0 0 2px #4b4b4b;*/
+}
+h2 {
+	margin: 0px;
+}
+.overlay {
+	width: 330px;
+	height: 318px;
+	background-color: rgba(255,255,255,.85);
+	/*-moz-box-shadow: 0 0 5px #4b4b4b;
+	-webkit-box-shadow: 0 0 5px #4b4b4b;*/
+    box-shadow: 0 0 5px #4b4b4b;
+	margin-right: 30px;
+	padding: 0 35px;
+	padding-top: 10px;
+}
+.overlay h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin-top: 28px;
+}
+.overlay h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	line-height: 1.5;
+}
+.profile {
+	background-color: yellow;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	width: 322px;
+	height: 45px;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+.resources {
+	background-color: #EDEDED;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0px;
+	border-right
+}
+.resources h2 {
+	font-family: "Merriweather", serif;
+	font-size: 25px;
+	padding: 0px 10px;
+}
+.resources h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	line-height: 1.5;
+	padding: 0 10px;
+	font-size: 18px;
+	margin-top: 5px;
+	max-width: 270px;
+}
+footer {
+	background-color: black;
+	height: 70px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+.resource {
+	padding: 10px;
+	padding-right: 14px;
+	border-right: 1px solid gray;
+}
+.graybutton {
+	background-color: darkgray;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	width: 247px;
+	height: 45px;
+	border-radius: 8px;
+	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+	/*border-bottom-color: gray;
+	border-bottom-style: groove;*/
+	box-shadow: 0 4px 2px -2px gray;
+	margin-left: 10px;
+}
+footer p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	color: white;
+	font-size: 18px;
+	margin-left: 20px;
+}
