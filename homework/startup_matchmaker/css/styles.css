@@ -150,6 +150,9 @@ footer {
 	box-shadow: 0 4px 2px -2px gray;
 	margin-left: 10px;
 }
+.c {
+	border-right: none;
+}
 footer p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: lighter;
@@ -157,3 +160,4 @@ footer p {
 	font-size: 18px;
 	margin-left: 20px;
 }
+
