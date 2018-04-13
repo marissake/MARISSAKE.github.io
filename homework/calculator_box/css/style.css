@@ -1,0 +1,46 @@
+#app {
+	padding-top: 50px;
+	font-family: monospace;
+	width: 500px;
+	margin: 0px auto;
+}
+
+.row {
+	display: flex;
+}
+
+.row div {
+	text-align: center;
+	width: 100px;
+	padding: 30px;
+	border: 1px dashed #252525;
+}
+
+.row div:hover {
+	background-color: #cccccc;
+	cursor: pointer;
+}
+
+#red {
+	background-color: rgb(255,0,0);
+}
+
+#red:hover {
+	background-color: rgba(255,0,0,.5);
+}
+
+#blue {
+	background-color: rgb(0,0,255);
+}
+
+#blue:hover {
+	background-color: rgba(0,0,255,.5);
+}
+
+.row div:active {
+	font-weight: bold;
+	font-size: 20px;
+}
+h1 {
+	text-align: center;
+}
