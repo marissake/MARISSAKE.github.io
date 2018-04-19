@@ -1,0 +1,100 @@
+div {
+	background: lightgray;
+  border: 1px solid gray;
+}
+body {
+	margin: 20px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	height: 150px;
+	width: 25%;
+	margin: 0px;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 150px;
+	width: 65%;
+	background-color: none;
+	align-items: center;
+}
+.links {
+	height: 65px;
+	width: 23%;
+}
+
+main {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.leftaside {
+	height: auto;
+	width: 20%;
+	margin-right: 20px;
+}
+.content {
+	height: 700px;
+	width: 80%;
+	background-color: none;
+
+}
+.contentheader {
+	height: 150px;
+	width: 100%
+}
+.contentbody {
+	display: flex;
+}
+.article {
+	display: flex;
+	margin-top: 20px
+
+}
+.leftarticle {
+	height: 350px;
+	flex-grow: 4;
+	margin: 0px;
+	margin-right: 20px;
+}
+.rightarticle {
+	height: 350px;
+	flex-grow: 1;
+	margin: 0px;
+
+}
+.contentbox {
+	/*height: auto;*/
+	margin-top: 20px;
+	flex-basis: 167.2px;
+}
+.carousel {
+	display: flex;
+	justify-content: space-between;
+	height: 150px;
+
+}
+.a {
+	flex-grow: 2;
+	margin-right: 20px;
+
+}
+.b {
+	
+	flex-grow: 2;
+	margin-right: 20px;
+}
+.c {
+flex-grow: 2;
+margin-right: 20px;
+}
+.d {
+	flex-grow: .1;
+
+}

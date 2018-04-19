@@ -66,3 +66,9 @@ h2 {
 	margin: 0px;
 	padding-bottom: 12px;
 }
+section:hover {
+	opacity: .7;
+}
+li:hover {
+	font-size: 20px;
+}

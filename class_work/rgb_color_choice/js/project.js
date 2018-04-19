@@ -27,9 +27,9 @@ function changeColor() {
 
 }
 
-var button = document.querySelector("#color-button");
+var buttin = document.querySelector("#color-button");
 
-button.onclick = changeColor;
+buttin.onclick = changeColor;
 // var button = document.querySelector("#color-button");
 
 // button.onclick = changeColor;

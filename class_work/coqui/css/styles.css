@@ -1,4 +1,30 @@
 body {
 	background: black;
 	color: white;
+	margin: 16px;
+	padding: 16px;
+}
+
+p {
+	border: 2px dotted pink;
+	padding: 10px;
+}
+img {
+	max-height: 300px;
+}
+.links {
+	margin: 30px;
+
+}
+
+div {
+	width: 500px;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+}
+
+img {
+	border: solid white 10px;
 }
