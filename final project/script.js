@@ -45,7 +45,7 @@ $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".fade").each(function() {
-      /* Check the location of each desired element */
+       Check the location of each desired element 
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       
       /* If the element is completely within bounds of the window, fade it in */

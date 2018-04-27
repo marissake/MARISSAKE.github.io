@@ -19,7 +19,12 @@
 
 
 }
-
+#offset {
+	height: 200px;
+	background-color: white;
+	position:absolute; 
+	top:-200px;
+}
 .body {
 	padding: 0px;
 	margin: 0px;
@@ -54,6 +59,7 @@ header {
     background: rgb(255,255,255);
 /*background: linear-gradient(262deg, rgba(255,255,255,1) 22%, rgba(255,255,255,0.5704656862745099) 100%, rgba(2,0,36,0.8561799719887955) 255%);*/
     position:fixed;
+    z-index: 2;
     display: flex;
     justify-content: flex-end;
     -webkit-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
@@ -95,6 +101,7 @@ body{
 
 #works {
 	background-color: white;
+	position: relative;
 }
 
 #works h1 {
