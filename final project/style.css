@@ -1,13 +1,375 @@
+.bgimage {
+    /* The background image */
+    background-image: url("IMG_3326.JPG"); /*center center no-repeat;*/
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    min-height: 650px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,.75);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-div {
-	height: 800px;
+/*.header {
+	background-color: rgb(255, 255, 255, 0.5);
+	height: 100px;*/
+
+
+}
+
+.body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.content {
+	height: 650px;
+	background-color: rgb(164, 141, 156);
+	margin-bottom: 0px;
+	padding: 40px;
+	/*display: flex;
+	justify-content: space-around;*/
+}
+
+.aboutme {
+	height: 400px;
+}
+
+/*#uberbar    { 
+    border-bottom:1px solid #000000; 
+    background: rgba(164,141,156,.5); 
+    padding:18px 20px; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    z-index:2000; 
+    width:100%;
+}*/
+header {
+    width:100%;
+    padding:10px;
+    background: rgb(255,255,255);
+/*background: linear-gradient(262deg, rgba(255,255,255,1) 22%, rgba(255,255,255,0.5704656862745099) 100%, rgba(2,0,36,0.8561799719887955) 255%);*/
+    position:fixed;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+    /*border-bottom: 2px solid gray;*/
+
+}
+
+footer .image {
+	max-width: 60px;
+}
+.image img {
+	max-width: 100%;
+
+}
+
+.lower-opacity {
+    opacity:0.5;
+}
+
+body{
+    margin:0px;
+}
+
+
+.logo {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	background-color: rgb(164, 141, 156);
+	justify-content: space-between;
+	transform: rotate(45deg);
+	left: 450px;
+	bottom: 100px;
+	z-index: -1;
+
+}
+
+#works {
 	background-color: white;
-	width:100%;
-}
-h1 {
-	color: blue;
 }
 
-.changeColor {
-   background: green;
+#works h1 {
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin: 0px;
+	border-bottom: 2px solid rgb(164, 141, 156);
+
+}
+
+#works h2 {
+	font-family: 'Muli', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.aboutme h1{
+font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin: 0px;
+	border-bottom: 2px solid white;
+
+}
+
+.aboutme h2{
+	font-family: 'Muli', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	margin: 5px 0px;
+}
+.bgimagetwo
+ {
+ 	 background-image: url("IMG_7433.JPG"); /*center center no-repeat;*/
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    min-height: 650px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,.75);
+ }
+ .bgimagethree {
+
+ 	 background-image: url("IMG_6627.JPG"); /*center center no-repeat;*/
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    min-height: 650px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,.75);
+ }
+
+.links a {
+	padding: 10px 20px;
+	font-family: 'Muli', sans-serif;
+	font-weight: 600;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.links a:hover {
+	color: gray;
+}
+
+.links {
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.overlay {
+	background-color: rgba(164, 141, 156, .5) ;
+	padding: 10px;
+	margin-left: 100px;
+	box-shadow: -15px 0px 10px -15px #111;
+
+
+}
+
+.overlay h1{
+	font-family: 'Muli', sans-serif;
+	font-weight: 100;
+	margin: 0;
+	color: white;
+	font-size: 60px;
+	-webkit-box-shadow: 0px 0px 24px 1px rgba(102,104,105,1);
+-moz-box-shadow: 0px 0px 24px 1px rgba(102,104,105,1);
+box-shadow: 0px 0px 24px 1px rgba(102,104,105,1);
+text-shadow: 1px 0px 9px rgba(150, 150, 150, 1);
+}
+
+.overlay h2 {
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0;
+	padding: 5px;
+	background-color: white;
+
+}
+
+.dot {
+	height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 10px;
+  margin-bottom: 4.5px;
+}
+ 
+.myphoto {
+	max-width: 130px;
+}
+.me {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+section {
+	max-width: 850px;
+	padding: 30px;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: white;
+	border-left: 3px solid white;
+}
+.myphoto img {
+	max-width: 100%;
+	border-radius: 50%;
+	border: 3px solid white;
+	-webkit-box-shadow: 0px 0px 24px -3px rgba(95,96,97,1);
+-moz-box-shadow: 0px 0px 24px -3px rgba(95,96,97,1);
+box-shadow: 0px 0px 24px -3px rgba(95,96,97,1);
+}
+
+.myphoto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttonsandpictures {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer {
+	background-color: rgb(164, 141, 156);
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+footer span {
+	padding: 20px 20px;
+	margin: 10px 0px;
+	font-size: 15px;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	color: black;
+}
+.socialicons a {
+	padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 90%;
+ background-color: white;
+ color: black;
+
+
+
+}
+
+
+.socialicons a:hover {
+	color: white;
+	background-color: black;
+
+
+}
+
+.mk {
+	max-width: 500px;
+}
+
+.content a {
+	text-decoration: none;
+	color: inherit;
+}
+.buttons {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 100px;
+	width: 300px;
+}
+
+.buttonone {
+	margin: 40px 0px;
+}
+.buttontwo {
+	margin: 40px 0px;
+}
+.buttonthree {
+	margin: 40px 0px;
+}
+
+.container {
+	max-width: 200px;
+	margin: 10px;
+	
+}
+.rowone {
+	display: flex;
+
+}
+.rowtwo {
+	display: flex;
+}
+.lettering {
+	max-width: 100%;
+
+}
+
+.portfolioimages {
+	display: flex;
+	max-width: 900px;
+}
+.cta {
+  position: relative;
+  margin: 0px;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(164, 141, 156, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #a48d9c;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
 }
