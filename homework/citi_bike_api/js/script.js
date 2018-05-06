@@ -1,4 +1,5 @@
 
+
 // As a User
 // When I visit the site
 // I expect to see the names of the all the stations
@@ -25,22 +26,48 @@
 
 $.ajax({
   type: 'GET',
-  url: 'http://api.citybik.es/citi-bike-nyc.json',
+  url: 'https://api.citybik.es/citi-bike-nyc.json',
   success: function(stations) {
     console.log(stations)
 
-    stations.forEach(logstations);
+//firstpart
+var firstfifty = stations.slice(0, 50);
+    firstfifty.forEach(logstations);
 
 function logstations(stations) {
-	var stationnames =(stations.name);
 
-	$(".allbikes").after(stationnames)
+	var stationnames = (stations.name);
+
+	$(".allbikes").after("<ul><li>" + stationnames + "</li></ul>");
 
 }
 
+//secondpart
+var filteredstations = stations.filter(logfreebikes);
+filteredstations.forEach(logfreestations);
 
+function logfreebikes(stations) {
+	
+	return (stations.free > 0);
+}
+
+function logfreestations (stations) {
+  var stationnames = (stations.name);
+  $("#emptybikes h2").after("<ul><li>" + stationnames + "</li></ul>")
+}
+// var freebikes = stations.free
+// freebikes.filter(parseFreeBikes);
+// function parseFreeBikes(free) {
+// 	return free>0;
+// }
+
+
+//filter(make) new array of object with free value greater than zero
+//from that array, for each, log station name
   },
 });
+
+
 
 
 
