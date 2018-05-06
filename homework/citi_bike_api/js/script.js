@@ -58,6 +58,7 @@ function logfreebikes(stations) {
 function logfreestations (stations) {
   var stationnames = (stations.name);
   
+  
   $("#emptybikes h4").append("<ul><li>" + stationnames + "</li></ul>");
 }
 }
