@@ -43,27 +43,31 @@ function logstations(stations) {
 }
 
 //secondpart
+$(".bikedropdown").change(getstations);
+function getstations() {
+  $("#emptybikes h4").empty();
 var filteredstations = stations.filter(logfreebikes);
 filteredstations.forEach(logfreestations);
 
 function logfreebikes(stations) {
 	
-	return (stations.free > 0);
+	return (stations.free >= $(".bikedropdown").val());
+
 }
 
 function logfreestations (stations) {
   var stationnames = (stations.name);
-  $("#emptybikes h2").after("<ul><li>" + stationnames + "</li></ul>")
+  
+  $("#emptybikes h4").append("<ul><li>" + stationnames + "</li></ul>");
 }
-// var freebikes = stations.free
-// freebikes.filter(parseFreeBikes);
-// function parseFreeBikes(free) {
-// 	return free>0;
-// }
+}
 
 
-//filter(make) new array of object with free value greater than zero
-//from that array, for each, log station name
+
+
+
+
+
   },
 });
 
