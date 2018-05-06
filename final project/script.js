@@ -1,8 +1,12 @@
 
+
+//on pageload, fade in the overlay ATF
 $(document).ready(function () {
     $('.overlay').fadeIn(1000).removeClass('hidden');
+    $('.myname').fadeIn(1000).removeClass('hidden');
 });
 
+//on scroll, fade in all elements with class fade
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -27,3 +31,11 @@ $("a[href^=#]").click(function(e) {
   console.log(dest); 
   $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow'); 
 });
+
+//lightbox
+
+$(document).ready(function(){
+    $('.chocolat-parent').Chocolat();
+});
+
+
