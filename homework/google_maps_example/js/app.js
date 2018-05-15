@@ -12,17 +12,23 @@
 
 
 function initMap() {
+
         var nyc = {lat: 40.730610, lng: -73.935242};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
           center: nyc
 
+      
+          
         });
 
         var marker = new google.maps.Marker({
           position: nyc,
           map: map
         });
+
+
+
       }
 
       

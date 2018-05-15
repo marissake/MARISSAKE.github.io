@@ -1,23 +1,32 @@
 .bgimage {
     /* The background image */
-    background-image: url("IMG_3326.JPG"); /*center center no-repeat;*/
+    background-image: url("IMG_0120.jpg"); /*center center no-repeat;
     /* Set background image to fixed (don't scroll along with the page) */
     background-attachment: fixed;
     /* Center the background image */
     /* Scale the background image to be as large as possible */
     background-size: cover;
-    min-height: 650px;
+    background-position: 100% 50%;
+    min-height: 750px;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,.75);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
+.mugs {
+  max-width:150%;
+  max-height:150%;
+
+}
 /*.header {
 	background-color: rgb(255, 255, 255, 0.5);
 	height: 100px;*/
-
+.heading {
+	width: 100%;
+	background-color: rgba(192,192,192,1);
+}
 
 }
 #offset {
@@ -31,8 +40,8 @@
 	margin: 0px;
 }
 
-.content {
-	background-color: rgb(164, 141, 156);
+.aboutme {
+	background-image: url("paper.png");
 	margin-bottom: 0px;
 	padding: 40px;
 	/*display: flex;
@@ -85,11 +94,22 @@ body{
     margin:0px;
 }
 
-.bgimage img{
-	max-width: 550px;
-	margin-bottom: -80px;
+.myname{
+	max-width: 500px;
 	z-index: 2;
-	margin-left: 10px;
+	margin-left: 2px;
+	margin-bottom: -80px;
+	margin-top: -20px;
+	opacity: 1;
+}
+@media screen and (max-width: 550px) {
+	.myname {
+	max-width: 350px;
+	margin: 0 auto;
+	margin-bottom: -48px;
+	z-index: 2;
+	
+}
 }
 
 .logo {
@@ -106,8 +126,9 @@ body{
 }
 
 #works {
-	background-color: white;
+	background-image: url("paper.png");
 	position: relative;
+	padding-top: 10px;
 }
 
 #works h1 {
@@ -115,6 +136,7 @@ body{
 	font-weight: 300;
 	text-align: center;
 	border-bottom: 2px solid rgb(164, 141, 156);
+	margin-top: 0px;
 
 }
 
@@ -130,7 +152,7 @@ font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	text-align: center;
 	margin: 0px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid black;
 
 }
 .handlettered {
@@ -153,13 +175,30 @@ font-family: 'Muli', sans-serif;
 	display: flex;
 	justify-content: flex-end;
 }*/
+.hamburger {
+	display: none;
+	position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    display: none;
+}
+
+
+
 
 .aboutme h2{
 	font-family: 'Muli', sans-serif;
 	font-weight: 800;
 	text-align: center;
 	margin: 5px 0px;
-	color: white;
+	color: black;
     margin-left: 120px;
     margin-top: 10px;
 } 
@@ -168,23 +207,25 @@ font-family: 'Muli', sans-serif;
 }
 .bgimagetwo
  {
- 	 background-image: url("IMG_7433.JPG"); /*center center no-repeat;*/
+ 	 background-image: url("IMG_0269.jpg"); /*center center no-repeat;*/
     /* Set background image to fixed (don't scroll along with the page) */
     background-attachment: fixed;
     /* Center the background image */
     /* Scale the background image to be as large as possible */
-    background-size: cover;
+    background-size: 100%;
+    background-position: 100% 50%;
     min-height: 650px;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,.75);
  }
  .bgimagethree {
 
- 	 background-image: url("IMG_6627.JPG"); /*center center no-repeat;*/
+ 	 background-image: url("IMG_0130.jpg"); /*center center no-repeat;*/
     /* Set background image to fixed (don't scroll along with the page) */
     background-attachment: fixed;
     /* Center the background image */
     /* Scale the background image to be as large as possible */
     background-size: cover;
+       background-position: 100% 50%;
     min-height: 650px;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,.75);
  }
@@ -196,6 +237,7 @@ font-family: 'Muli', sans-serif;
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
+	
 }
 .links a:hover {
 	color: gray;
@@ -203,23 +245,110 @@ font-family: 'Muli', sans-serif;
 }
 
 .links {
-	margin-right: 0px;
-	display: flex;
+	margin: 0 auto;
+	/*display: flex;*/
+	justify-content: left;
+	align-items: center;
+	position: relative;
+
+}
+@media screen and (max-width: 482px) {
+	.links a {
+		display: none;
+	}
+	.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 9px 0;
+    transition: 0.4s;
+    display: block;
+}
+	.hamburger {
+		position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+	}
+	.menucontent {
+		display: flex;
+		flex-direction: column;
+	}
+	.mobilemenu {
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+
+.mobilemenu {
+	display: none;
+	position: relative;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: black;
+	max-width: 180px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.mobilemenu a {
+	color: white;
+	text-decoration: none;
+	font-family:'Muli', sans-serif;
+	font-weight: 100;
+	padding: 3px;
+}
+
+.mobilemenu a:hover {
+	color: gray;
+}
+
+@media screen and (max-width: 506px) {
+	.hey {
+		max-width: 330px;
+	margin-bottom: -55px;
+	z-index: 1;
+}
+	}
 }
 
 .hidden {
 	display: none;
 }
 .overlay {
-	background-color: rgba(0, 0, 0, .9) ;
-	padding: 10px;
-	box-shadow: -15px 0px 10px -15px #111;
-width: 100%;
-margin-bottom: 100px;
+	text-align: center;
+	background-color: rgba(119,136,153,.4);
+/*	box-shadow: -15px 0px 10px -15px #111;
+*/width: 30%;
+/*margin-bottom: 100px;*/
+z-index: 1;
+padding: 0px;
+border: 2px solid white;
 
 
+
+}
+
+@media screen and (max-width: 720px){
+	.me {
+		flex-direction: column;
+	}
+	.myphoto img {
+	
+		max-height: 250px;
+	}
+
+	.mybio {
+		margin: 0px;
+	}
+	.aboutme {
+		padding: 40px 0px;
+	}
+}
+
+.menucontent {
+	display: none;
 
 }
 
@@ -237,11 +366,13 @@ margin-bottom: 100px;
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
-	margin: 0 auto;
-	text-align: center;
+	/*margin: 0 auto;
+	text-align: center;*/
 	padding: 5px;
-	background-color: rgba(164, 141, 156, .3);
+	background-color: none;
 	color: white;
+	position: relative;
+	margin: 0 auto;
 
 }
 
@@ -256,13 +387,17 @@ margin-bottom: 100px;
 }
  
 .myphoto {
-	max-width: 130px;
+	min-width: 150px;
+	max-width: 300px;
+	
 }
+
+
 .me {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+    align-items: center;
 }
+
 section {
 	padding: 30px;
 	font-family: 'Muli', sans-serif;
@@ -283,18 +418,17 @@ box-shadow: 0px 0px 24px -3px rgba(95,96,97,1);
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	font-size: 20px; 
-	margin-left: 50px;
+	margin-left: 0px;
+	color: black;
 }
-.myphoto {
-	max-width: 400px;
-}
+
 .buttonsandpictures {
 	display: flex;
 	justify-content: space-between;
 }
 
 footer {
-	background-color: rgb(164, 141, 156);
+	background-image: url("seamless_paper_texture.png");
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	display: flex;
@@ -304,7 +438,7 @@ footer {
 
 footer span {
 	padding: 0px 10px;
-	margin: 10px 0px;
+	margin: 30px;
 	font-size: 15px;
 	font-family: 'Muli', sans-serif;
 	font-weight: 600;
@@ -383,6 +517,9 @@ footer span {
 	max-width: 100%;
 
 }
+.chocolat-image:hover {
+	opacity: .7;
+}
 
 .portfolioimages {
 	display: flex;
@@ -441,9 +578,10 @@ footer span {
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .box {
-
+  background-color: white;
   position: relative;
   width: 20%;
   padding-bottom: 20%;
@@ -502,4 +640,30 @@ section.touch .boxInner.touchFocus .titleBox {
 box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.82);
 }
 
+@media screen and (max-width: 445px) and (min-widthL: 408px) {
+	.handlettered {
+		max-width: 350px;
+	margin: 0 auto;
+	margin-bottom: -45px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.handlettered {
+		max-width: 330px;
+	margin: 0 auto;
+	margin-bottom: -45px;
+	}
+}
+@media screen and (max-width: 432px) {
+	.overlay h2 {
+		font-size: 15px;
+	}
+	.dot {
+		display: none;
+	}
+	.overlay h2 .modern {
+		margin-right: 10px;
+	}
+}
 

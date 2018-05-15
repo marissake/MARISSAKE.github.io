@@ -20,6 +20,7 @@
 function dropDown(event) {
 	sibling = $(event.currentTarget).next()
 	$(sibling).slideToggle(400)
+	console.log(event.target)
 }
 
 $("header").click(dropDown);

@@ -23,9 +23,15 @@ function addTotal(event) {
 	var newEntry = $("#newEntry").val();
 	//get decimal value of new entry
 	newEntry = parseFloat(newEntry);
+
+if (Number.isNaN(newEntry)) {
+	alert ("not a number")
+	$('#newEntry').val("");
+} else {
 	//limit to two decimal places
 	dollars = '$' + newEntry.toFixed(2);
 	console.log(dollars);
+
 	//place register entry into new row
 	var newItem = "<tr><td></td><td>" + dollars + "</td></tr>";
 	$("#entries").append(newItem);
@@ -34,6 +40,8 @@ function addTotal(event) {
 	$("#total").html(billtotal.toFixed(2));
 	//empty input field
 	$('#newEntry').val("");
+
+}
 }
 
 
