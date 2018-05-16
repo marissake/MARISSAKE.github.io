@@ -24,4 +24,5 @@ function changePicture() {
 		$("body").addClass("syd")
 	}
 }
+
 	
