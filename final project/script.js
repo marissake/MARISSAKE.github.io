@@ -49,6 +49,8 @@ $(document).ready(function(){
 });
 
 
+//hamburger menu 
+
 $(".hamburger").click(showMenu);
 function showMenu() {
   $(".mobilemenu").toggle();

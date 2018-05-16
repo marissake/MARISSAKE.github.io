@@ -1,0 +1,14 @@
+main {
+  text-align: center;
+  padding-top: 25px;
+  position: relative;
+}
+
+img {
+  margin: 25px;
+  position: absolute;
+}
+
+.globeRight{
+	right: 0px;
+}
