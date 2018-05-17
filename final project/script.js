@@ -1,16 +1,22 @@
 
+
+//on page load, add animation to title overlay
+
+$(window).scroll(function () {
+    var offset = $(window).scrollTop();
+    console.log(offset);
+    if (offset > 1) {
+            $('.overlay').css('display', 'block')
+
+      $('.overlay').addClass('animated slideInUp')
+    } 
+    //   $('.overlay').removeClass('animated lightSpeedOut')
+    // }
+  })
 //randomize first bg image
-$(document).ready(function () {
-    $('.overlay').fadeIn(2000).removeClass('hidden');
-    $('.myname').fadeIn(1000).removeClass('hidden');
-});
 
-// $(document).ready(function () {
-// var bgColorArray = ['IMG_0130.jpg','IMG_0196.jpg'],
-//     selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 
-// $('.bgimage').css('background', 'url(' + selectBG + ')');
-// });
+
 
 //on pageload, fade in the overlay ATF
 

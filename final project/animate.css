@@ -2135,6 +2135,7 @@
   animation-name: lightSpeedIn;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  display: block;
 }
 
 @-webkit-keyframes lightSpeedOut {

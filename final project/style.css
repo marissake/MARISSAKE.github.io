@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .mugs {
@@ -120,7 +121,6 @@ body{
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	text-align: center;
-	border-bottom: 2px solid rgb(164, 141, 156);
 	margin-top: 0px;
 
 }
@@ -137,7 +137,7 @@ font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	text-align: center;
 	margin: 0px;
-	border-bottom: 2px solid black;
+	
 
 }
 .handlettered {
@@ -149,6 +149,8 @@ font-family: 'Muli', sans-serif;
 .worksheader h1 span{
 	padding: 0px;
 	margin-left: -2px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 }
 .hey {
 	max-width: 480px;
@@ -180,8 +182,8 @@ font-family: 'Muli', sans-serif;
 
 
 .aboutme h2{
-	font-family: 'Muli', sans-serif;
-	font-weight: 800;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 	text-align: center;
 	margin: 5px 0px;
 	color: black;
@@ -198,7 +200,7 @@ font-family: 'Muli', sans-serif;
     background-attachment: fixed;
     /* Center the background image */
     /* Scale the background image to be as large as possible */
-    background-size: 100%;
+    background-size: cover;
     background-position: 100% 50%;
     min-height: 650px;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,.75);
@@ -267,6 +269,8 @@ font-family: 'Muli', sans-serif;
 	.menucontent {
 		display: flex;
 		flex-direction: column;
+		position: absolute;
+		top: 10;
 	}
 	.mobilemenu {
 		display: flex;
@@ -280,14 +284,13 @@ font-family: 'Muli', sans-serif;
 
 .mobilemenu {
 	display: none;
-	position: relative;
-	flex-direction: column;
+	position: absolute;
 	justify-content: center;
 	align-items: center;
 	background: black;
 	max-width: 180px;
 	margin: 0 auto;
-	top: 80px;
+	bottom: 200px;
 }
 
 .mobilemenu a {
@@ -321,9 +324,9 @@ font-family: 'Muli', sans-serif;
 */max-width: 460px;
 /*margin-bottom: 100px;*/
 z-index: 1;
-padding: 0px 10px;
+padding: 10px 10px;
 border: 2px solid white;
-
+display: none;
 }
 
 .overlay:hover {
@@ -363,8 +366,8 @@ border: 2px solid white;
 }
 
 .myname {
-	font-family: 'Muli', sans-serif;
-	font-weight: 100;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 	margin: 0 auto;
 	color: white;
 	font-size: 60px;
@@ -425,7 +428,7 @@ section {
 box-shadow: 0px 0px 24px -3px rgba(95,96,97,1);
 }
 .mybio {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;;
 	font-weight: 300;
 	font-size: 20px; 
 	margin-left: 0px;
@@ -439,7 +442,7 @@ box-shadow: 0px 0px 24px -3px rgba(95,96,97,1);
 
 footer {
 	background-image: url("seamless_paper_texture.png");
-	font-family: 'Muli', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 	display: flex;
 	justify-content: space-between;
@@ -562,11 +565,12 @@ footer span {
 }
 .cta span {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
   line-height: 18px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.25em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   vertical-align: middle;
 }
 .cta:hover:before {
